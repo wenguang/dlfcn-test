@@ -1,6 +1,6 @@
 
 main:libxxx.so main.c
-	gcc main.c -L./ -lxxx -o main
+	gcc main.c -ldl -o main
 libxxx.so:xxx.h xxx.c
 	gcc -fPIC -shared xxx.c -o libxxx.so
 
